@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 
 llm = Ollama(
-    model="phi3",
+    model="phi3:mini",
     keep_alive=-1,
     format="json"
 )
@@ -16,6 +16,7 @@ def prepare_chat_prompt(context:str, prompt:str):
         "the question. If you don't know the answer, say that you "
         "don't know. Use three sentences maximum and keep the "
         "answer concise."
+        "answer in PT-BR"
         "\n\n"
         "{context}"
     ).format(context=context)

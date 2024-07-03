@@ -9,7 +9,7 @@ collection = get_db_collection(COLLECTION_NAME)
 while True:
 
     query_text = input(
-        "Ask anything about Automatic Medicine Vending Machine project. (Enter q to quit) :\n"
+        "Ask anything about GED 13. (Enter q to quit) :\n"
     )
     if query_text == "q":
         print("Quitting...\n\n")
